@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: yanhp.github.io/sitemap.xml
+Sitemap: https://yanhp.github.io/sitemap.xml
