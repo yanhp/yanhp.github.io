@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.6aa088348d86326ca4be4205ae9973752a42b2e758c2f5f879a69172441859c9.css" integrity="sha256-aqCINI2GMmykvkIFrplzdSpCsudYwvX4eaaRckQYWck=" media="screen" crossorigin="anonymous">
 
 
 
@@ -70,7 +70,7 @@
 <meta itemprop="name" content="如何创建属于自己的个人博客">
 <meta itemprop="description" content="使用Hugo快速构建属于自己的个人博客"><meta itemprop="datePublished" content="2022-09-05T11:13:24+08:00" />
 <meta itemprop="dateModified" content="2022-09-05T11:13:24+08:00" />
-<meta itemprop="wordCount" content="396">
+<meta itemprop="wordCount" content="1037">
 <meta itemprop="keywords" content="hugo,blog," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何创建属于自己的个人博客"/>
 <meta name="twitter:description" content="使用Hugo快速构建属于自己的个人博客"/>
@@ -285,7 +285,8 @@
             <a href="https://yanhp.github.io/categories/other/"> other </a>
             
           </div>
-        
+        <span class="more-meta"> 1037 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -312,6 +313,15 @@
     <li><a href="#如何使用">如何使用</a>
       <ul>
         <li><a href="#1生成站点">1.生成站点</a></li>
+        <li><a href="#2创建文章">2.创建文章</a></li>
+        <li><a href="#3下载主题">3.下载主题</a></li>
+        <li><a href="#4编译预览">4.编译预览</a></li>
+      </ul>
+    </li>
+    <li><a href="#部署到github">部署到Github</a>
+      <ul>
+        <li><a href="#1创建仓库">1.创建仓库</a></li>
+        <li><a href="#2push代码">2.Push代码</a></li>
       </ul>
     </li>
   </ul>
@@ -346,13 +356,113 @@
 将二进制文件的路径添加到PATH环境变量中.</p>
 <h2 id="如何使用">如何使用</h2>
 <h3 id="1生成站点">1.生成站点</h3>
-<pre tabindex="0"><code>hugo new site mysite
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello, World!&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site mysite
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2创建文章">2.创建文章</h3>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new post/first.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3下载主题">3.下载主题</h3>
+<p>官网主题地址: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a><br>
+把主题通过git克隆或直接下载到本地,放到<code>…/mysite/themes/</code>目录下.</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#007020">cd</span> mysite
+</span></span><span style="display:flex;"><span>git clone https://github.com/xianmin/hugo-theme-jane.git --depth<span style="color:#666">=</span><span style="color:#40a070">1</span> themes/jane
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4编译预览">4.编译预览</h3>
+<p>执行命令后，打开网址 <code>http://localhost:1313/</code> 即可查看本地生成的静态网站</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -t jane -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="部署到github">部署到Github</h2>
+<h3 id="1创建仓库">1.创建仓库</h3>
+<p>在Github上面创建一个仓库，名字为<code>yourname.github.io</code>格式.(其中<code>yourname</code>是你github的用户名称)</p>
+<h3 id="2push代码">2.Push代码</h3>
+<p>在你的站点目录下执行，执行完后本地的mysite文件夹下会多出一个<code>public</code>文件夹.</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo --theme<span style="color:#666">=</span>jane --baseUrl<span style="color:#666">=</span><span style="color:#4070a0">&#39;你的远端地址&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注意: 这里没有server，因为我们要部署到远端；theme和上面描述一致；baseUrl=https://yourname.github.io/</p>
+</blockquote>
+<p>进入<code>public</code>文件夹，执行</p>
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>// 进入public文件夹
+</span></span><span style="display:flex;"><span><span style="color:#007020">cd</span> public
+</span></span><span style="display:flex;"><span>// 初始化Git
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>// 设置远程仓库关联
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/yourname/yourname.github.io.git
+</span></span><span style="display:flex;"><span>// 设置远程URl,其中token是在github中生成出来的
+</span></span><span style="display:flex;"><span>git remote set-url origin https://token@github.com/yourname/yourname.github.io.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>// 添加代码
+</span></span><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>// 提交代码
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#4070a0">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span>// 切换分支
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>// Push代码
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>注意</strong>：<br>
+关联github远程仓库时建议使用 <code>git remote set-url origin https://token@github.com/yourname/yourname.github.io.git</code>,其中<code>token</code>可以在Settings/Developer settings/中生成.</p>
+<p>当出现<code>fatal: refusing to merge unrelated histories</code>时使用<br>
+<code>git config --global http.sslVerify &quot;false&quot;</code>解决</p>
+</blockquote>
     </div>
 
     
@@ -379,6 +489,19 @@
 
     
     
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">Reward</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="https://thumbnail0.baidupcs.com/thumbnail/4c8992a7cq2989190ca0dcd59be9e008?fid=302673182-250528-207744475504252&amp;time=1663070400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-M%2BA0F6JeXul3dVvTgWUxODpS7mM%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=168950743582898360&amp;dp-callid=0&amp;file_type=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video">
+        <span>Wechat</span>
+      </label>
+    
+  </div>
+</div>
 
     <footer class="post-footer">
       <div class="post-tags">
@@ -397,8 +520,28 @@
 
   
   
+  
+  
 
   
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+    
+
+  
+
   
 
         </div>
@@ -479,7 +622,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
 
 
 
