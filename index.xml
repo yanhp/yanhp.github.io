@@ -18,12 +18,38 @@
       
       <guid>https://yanhp.github.io/post/create-a-blog.zh-cn/</guid>
       
-        <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;    本文章是介绍如何使用Hugo来搭建自己的属于自己的个人博客站点，最终托管部署至Github使用子域名进行访问。&lt;/p&gt;
+        <description>&lt;p&gt;本文是介绍如何使用hugo来搭建自己的属于自己的个人博客站点，最终托管部署至github使用子域名进行访问.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;选用Hugo是因其简单而强大的功能，使用其简单的命令和大量丰富的主题可以帮助我们快速构建站点。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;安装hugo&#34;&gt;安装Hugo&lt;/h2&gt;</description>
+&lt;h2 id=&#34;搭建环境&#34;&gt;搭建环境&lt;/h2&gt;
+&lt;h3 id=&#34;1安装golang&#34;&gt;1.安装Golang&lt;/h3&gt;
+&lt;p&gt;Hugo基于Go语言，所以你要安装Golang的环境&lt;br&gt;
+&lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2下载hugo&#34;&gt;2.下载Hugo&lt;/h3&gt;
+&lt;p&gt;安装hugo最通用的方法是到Github下载编译好的二进制文件.&lt;br&gt;
+&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yanhp.github.io/images/setp-1.png&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本人是Mac机型同时有些主题是需要扩展版本才支持所有我选择了 &lt;code&gt;hugo_extended_0.102.3_macOS-universal.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3安装hugo&#34;&gt;3.安装Hugo&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Mac系统:&lt;/strong&gt;&lt;br&gt;
+1)下载二进制文件后解压，然后配置PATH环境变量路径即可使用.&lt;br&gt;
+2)也可以使用&lt;code&gt;Homebrew&lt;/code&gt;进行安装.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linux系统:&lt;/strong&gt;&lt;br&gt;
+将二进制文件拷贝到&lt;code&gt;/usr/local/bin/&lt;/code&gt;文件夹下，这样就可以在命令行中直接运行hugo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows系统:&lt;/strong&gt;&lt;br&gt;
+将二进制文件的路径添加到PATH环境变量中.&lt;/p&gt;
+&lt;h2 id=&#34;如何使用&#34;&gt;如何使用&lt;/h2&gt;
+&lt;h3 id=&#34;1生成站点&#34;&gt;1.生成站点&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new site mysite
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
     
